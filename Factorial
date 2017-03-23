@@ -1,0 +1,15 @@
+public class Factorial {
+    public static int recursion(int num) {
+        int result;
+        if (num == 1) {
+            return 1;
+        }
+        result = recursion(num - 1) * num;
+        return result;
+    }
+
+    public static void main(String[] args) {
+        int n = 4;
+        System.out.println("Значение Факториала " + n + " = " + recursion(n));
+    }
+}
